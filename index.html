@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Insert title here</title>
+  <link rel="stylesheet" href="cartstyle.css">
+</head>
+
+<body>
+  <ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="checkout.html">Checkout</a></li>
+
+  </ul>
+
+  <h1>Purchase Items</h1>
+  <p>Purchase whatever you need. </p>
+  <p>Click 'Checkout' Tab to see cart and checkout</p>
+  <div id="alerts"></div>
+  <div class="productcont">
+    <div class="card">
+      <div class="product">
+        <h3 class="productname">Product 1</h3>
+        <p>Product description excerpt...</p>
+        <p class="price">$5.05</p>
+        <button class="addtocart">Add To Cart</button>
+      </div>
+    </div>
+    <div class="product">
+      <h3 class="productname">Product 2</h3>
+      <p>Product description excerpt...</p>
+      <p class="price">$8.50</p>
+      <button class="addtocart">Add To Cart</button>
+    </div>
+    <div class="product">
+      <h3 class="productname">back</h3>
+      <p>Product description excerpt...</p>
+      <p class="price">$10.50</p>
+      <button class="addtocart">Add To Cart</button>
+    </div>
+  </div>
+  <div id="cart-c">
+    <div class="cart-container">
+      <h2>Cart</h2>
+      <table>
+        <thead>
+          <tr>
+            <th><strong>Product</strong></th>
+            <th><strong>Price</strong></th>
+          </tr>
+        </thead>
+        <tbody id="carttable">
+        </tbody>
+      </table>
+      <hr>
+      <table id="carttotals">
+        <tr>
+          <td><strong>Items</strong></td>
+          <td><strong>Total</strong></td>
+        </tr>
+        <tr>
+          <td>x <span id="itemsquantity">0</span></td>
+
+          <td>$<span id="total">0</span></td>
+        </tr>
+      </table>
+
+
+      <div class="cart-buttons">
+        <button id="emptycart">Empty Cart</button>
+        <button id="checkout">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    document.getElementById('cart-c').style.display = "none";
+  </script>
+</body>
+<script src="cartscript.js"></script>
+
+</html>
